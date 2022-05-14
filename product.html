@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="./assets/images/LOGO-ico.png">
+  <title>PRODUCT</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  
+    <header class="shadow-bt">
+  <div class="container py-8">
+    <nav class="d-flex justify-content-between p-0">
+      <a class="logo" href="index.html">FAR</a>
+
+      <div class="d-flex align-self-center">
+        <div class="media-lg-only">
+          <ul class="d-flex">
+            <li class="d-flex align-self-center">
+              <a class="" href="about.html">ABOUT</a>
+            </li>
+            <li class="d-flex align-self-center">
+              <a class="ml-13" href="product.html">PRODUCT</a>
+            </li>
+            <li class="d-flex align-self-center">
+              <a class="ml-13" href="color.html">COLOR SELECTOR</a>
+            </li>
+            <li class="d-flex align-self-center">
+              <a class="ml-13" href="catalog.html">CATALOG</a>
+            </li>
+            <li class="d-flex align-self-center">
+              <a class="ml-13" href="site.html">SITE</a>
+            </li>
+            <li class="d-flex align-self-center">
+              <a class="ml-13" href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+
+        <a class="material-icons media-lg-none showMenu text-3xl font-weight-bold pl-7">menu</a>
+
+        <a class="position-relative pl-7 pl-lg-13" href="pay-1.html">
+          <span class="material-icons text-3xl">shopping_cart</span>
+          <span class="position-absolute cartText rounded-circle bg-primary text-white text-sm px-2 py-0">2</span>
+        </a>
+
+        <a class="material-icons text-3xl pl-7" href="login.html">account_circle</a>
+
+        <div class="position-relative">
+          <a href="#" class="material-icons language text-3xl pl-7">
+            language
+          </a>
+          <div class="position-absolute language_menu bg-white border rounded dropdown-menu-right">
+            <ul class="py-2">
+              <li class="px-8 py-2"><a href="#">ENGLISH</a></li>
+              <li class="px-8 py-2"><a href="#">繁體中文</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<ul class="showMenu-list">
+  <li class="d-flex align-self-center">
+    <a class="py-5 mt-5" href="about.html">ABOUT</a>
+  </li>
+  <li class="d-flex align-self-center">
+    <a class="py-5" href="product.html">PRODUCT</a>
+  </li>
+  <li class="d-flex align-self-center">
+    <a class="py-5" href="color.html">COLOR SELECTOR</a>
+  </li>
+  <li class="d-flex align-self-center">
+    <a class="py-5" href="catalog.html">CATALOG</a>
+  </li>
+  <li class="d-flex align-self-center">
+    <a class="py-5" href="site.html">SITE</a>
+  </li>
+  <li class="d-flex align-self-center">
+    <a class="py-5 mb-5" href="contact.html">CONTACT</a>
+  </li>
+</ul>
+  
+
+  
+<section class="container mt-20 mt-lg-24 mb-20 mb-lg-24">
+  <h2 class="border-bottom border-dark text-2xl text-lg-4xl font-weight-bold mb-10 mb-lg-17 pb-5 pb-lg-8">系列產品</h2>
+  <div class="row">
+    <div class="col-12">
+      <form action="" class="d-flex flex-column flex-md-row bg-gray rounded mb-8 mb-lg-17 p-6">
+        <select id="inputProductA" class="form-control mb-6 mb-md-0 mr-0 mr-md-3">
+          <option selected>YAMAHA</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+        <select id="inputProductB" class="form-control mb-6 mb-md-0 mr-0 mr-md-3">
+          <option selected>勁戰</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+        <select id="inputProductC" class="form-control mb-6 mb-md-0 mr-0 mr-md-3">
+          <option selected>SA 系列</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+        <button type="submit" class="btn btn-primary">SEARCH</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="d-flex flex-column">
+    <ul class="row">
+      <li class="col-12 col-md-6 col-lg-4 mb-13">
+        <div
+          class="d-flex flex-column align-items-center border border-secondary rounded-top pt-13 px-8 px-md-10 px-xl-15">
+          <img src="./assets/images/product-1.png" alt="product" class="w_220 mb-13">
+          <h4 class="text-primary font-weight-bold text-align-justify_single w-100">RACING / RACING S 雷霆</h4>
+          <div class="d-flex justify-content-between align-items-center w-100 mb-6">
+            <span class="text-lg">雙碟專案</span>
+            <span class="text-2xl font-weight-bold">NT$4,860</span>
+          </div>
+        </div>
+        <a data-toggle="modal" data-target="#productInfoModal"
+          class="btn btn-secondary rounded-bottom text-lg w-100 py-5">產品規格</a>
+      </li>
+      <li class="col-12 col-md-6 col-lg-4 mb-13">
+        <div
+          class="d-flex flex-column align-items-center border border-secondary rounded-top pt-13 px-8 px-md-10 px-xl-15">
+          <img src="./assets/images/product-2.png" alt="product" class="w_220 mb-13">
+          <h4 class="text-primary font-weight-bold text-align-justify_single w-100">RACING / RACING S 雷霆</h4>
+          <div class="d-flex justify-content-between align-items-center w-100 mb-6">
+            <span class="text-lg">雙碟專案</span>
+            <span class="text-2xl font-weight-bold">NT$4,860</span>
+          </div>
+        </div>
+        <a data-toggle="modal" data-target="#productInfoModal"
+          class="btn btn-secondary rounded-bottom text-lg w-100 py-5">產品規格</a>
+      </li>
+      <li class="col-12 col-md-6 col-lg-4 mb-13">
+        <div
+          class="d-flex flex-column align-items-center border border-secondary rounded-top pt-13 px-8 px-md-10 px-xl-15">
+          <img src="./assets/images/product-1.png" alt="product" class="w_220 mb-13">
+          <h4 class="text-primary font-weight-bold text-align-justify_single w-100">RACING / RACING S 雷霆</h4>
+          <div class="d-flex justify-content-between align-items-center w-100 mb-6">
+            <span class="text-lg">雙碟專案</span>
+            <span class="text-2xl font-weight-bold">NT$4,860</span>
+          </div>
+        </div>
+        <a data-toggle="modal" data-target="#productInfoModal"
+          class="btn btn-secondary rounded-bottom text-lg w-100 py-5">產品規格</a>
+      </li>
+      <li class="col-12 col-md-6 col-lg-4 mb-13">
+        <div
+          class="d-flex flex-column align-items-center border border-secondary rounded-top pt-13 px-8 px-md-10 px-xl-15">
+          <img src="./assets/images/product-2.png" alt="product" class="w_220 mb-13">
+          <h4 class="text-primary font-weight-bold text-align-justify_single w-100">RACING / RACING S 雷霆</h4>
+          <div class="d-flex justify-content-between align-items-center w-100 mb-6">
+            <span class="text-lg">雙碟專案</span>
+            <span class="text-2xl font-weight-bold">NT$4,860</span>
+          </div>
+        </div>
+        <a data-toggle="modal" data-target="#productInfoModal"
+          class="btn btn-secondary rounded-bottom text-lg w-100 py-5">產品規格</a>
+      </li>
+      <li class="col-12 col-md-6 col-lg-4 mb-13">
+        <div
+          class="d-flex flex-column align-items-center border border-secondary rounded-top pt-13 px-8 px-md-10 px-xl-15">
+          <img src="./assets/images/product-1.png" alt="product" class="w_220 mb-13">
+          <h4 class="text-primary font-weight-bold text-align-justify_single w-100">RACING / RACING S 雷霆</h4>
+          <div class="d-flex justify-content-between align-items-center w-100 mb-6">
+            <span class="text-lg">雙碟專案</span>
+            <span class="text-2xl font-weight-bold">NT$4,860</span>
+          </div>
+        </div>
+        <a data-toggle="modal" data-target="#productInfoModal"
+          class="btn btn-secondary rounded-bottom text-lg w-100 py-5">產品規格</a>
+      </li>
+      <li class="col-12 col-md-6 col-lg-4 mb-13">
+        <div
+          class="d-flex flex-column align-items-center border border-secondary rounded-top pt-13 px-8 px-md-10 px-xl-15">
+          <img src="./assets/images/product-2.png" alt="product" class="w_220 mb-13">
+          <h4 class="text-primary font-weight-bold text-align-justify_single w-100">RACING / RACING S 雷霆</h4>
+          <div class="d-flex justify-content-between align-items-center w-100 mb-6">
+            <span class="text-lg">雙碟專案</span>
+            <span class="text-2xl font-weight-bold">NT$4,860</span>
+          </div>
+        </div>
+        <a data-toggle="modal" data-target="#productInfoModal"
+          class="btn btn-secondary rounded-bottom text-lg w-100 py-5">產品規格</a>
+      </li>
+    </ul>
+
+    <nav aria-label="Page navigation example" class="align-self-end">
+      <ul class="pagination">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
+
+
+<!-- productInfoModal -->
+<div class="modal fade p-0" id="productInfoModal" data-backdrop="static" data-keyboard="false" tabindex="-1"
+  aria-labelledby="productInfoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-md">
+    <div class="modal-content position-relative">
+      <button type="button" class="close position-absolute material-icons text-3xl" data-dismiss="modal"
+        aria-label="Close">
+        <span aria-hidden="true">highlight_off</span>
+      </button>
+
+      <div class="modal-body d-flex flex-column justify-content-center align-items-center px-17 py-17 py-lg-20">
+        <img src="./assets/images/product-1.png" alt="product" class="w_220 mb-13">
+
+
+        <div class="d-flex flex-column">
+          <table class="table table-striped w-100 mb-0">
+            <thead class="thead-dark w-100">
+              <tr class="text-center">
+                <th colspan="2" class="h5">SA-CYGNUS-245</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="font-weight-bold w_120">外徑 (mm)</th>
+                <td class="">220/245</td>
+              </tr>
+              <tr>
+                <td class="font-weight-bold">厚度 (mm)</th>
+                <td class="">3.0</td>
+              </tr>
+              <tr>
+                <td class="font-weight-bold">外盤材質</th>
+                <td class="">日製不鏽鋼</td>
+              </tr>
+              <tr>
+                <td class="font-weight-bold">內盤材質</th>
+                <td class="">鉚接型</td>
+              </tr>
+              <tr>
+                <td class="font-weight-bold">
+                  </th>
+                <td class="d-flex">
+                  <img src="./assets/images/product-3.png" alt="" class="rounded w_80 mr-4">
+                  <img src="./assets/images/product-4.png" alt="" class="rounded w_80">
+                </td>
+              </tr>
+              <tr>
+                <td class="font-weight-bold">浮動釦數</th>
+                <td class="">5</td>
+              </tr>
+              <tr>
+                <td class="font-weight-bold">內盤配色</th>
+                <td class="">平光黑</td>
+              </tr>
+              <tr>
+                <td class="font-weight-bold">浮動釦配色</th>
+                <td class="">雷射刻字亮紅釦</td>
+              </tr>
+              <tr>
+                <td class="font-weight-bold">產品特點</th>
+                <td class="">浮動扣件、中心盤皆採用硬化陽極處理，加長產品壽命，並同時提昇改裝質感特色。
+                  全浮動設計，內外盤與國外頂尖產品一樣具有間隙與彈性，能確保高熱產生的膨脹與變形可以被有效吸收，確保碟盤正確運作，增加制動準確性。</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <section class="sendmailBg bg-black d-flex align-items-end">
+	<div class="container mb-24">
+		<div class="row">
+			<div class="col-12 col-md-6 col-lg-4">
+				<label for="sendmail" class="text-2xl text-lg-3xl font-weight-medium text-white lineHeight-2 mb-5">
+					對產品有任何疑問？<br>請與我們聯繫！
+				</label>
+		
+				<div class="input-group" data-aos="fade-up" data-aos-duration="2000">
+					<input id="sendmail" type="text" class="form-control py-5" placeholder="輸入您的電子信箱"
+						aria-label="Recipient's username" aria-describedby="button-addon2">
+					<div class="input-group-append">
+						<button class="btn btn-primary px-14 px-md-17" type="button" id="button-addon2">送出</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+  
+
+  
+    <footer class="container d-flex justify-content-between align-items-center py-8">
+  <a class="logo" href="index.html">FAR</a>
+  <p class="mobile-only text-sm mt-7">© 2021 F.A.R.</p>
+  <p class="media-sm-show text-sm mt-7">Copyright © 2021 F.A.R.. All rights reserved.</p>
+</footer>
+  
+
+  <script>
+    function on() {
+      document.getElementById("overlay").style.display = "block";
+    }
+    
+    function off() {
+      document.getElementById("overlay").style.display = "none";
+    }
+  </script>
+
+  <script src="./assets/js/vendors.js"></script>
+  <!-- ↑↑↑↑ 它是 jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+  
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>

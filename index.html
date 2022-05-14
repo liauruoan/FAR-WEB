@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="./assets/images/LOGO-ico.png">
+  <title>FAR</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  
+
+  
+<section class="position-relative">
+  <div class="content vh-100">
+    <div id="overlay" onclick="off()"></div>
+    <a class="position-absolute indexMenu material-icons text-light text-3xl font-weight-bold" onclick="on()">menu</a>
+    
+    <video autoplay muted loop class="myVideo">
+      <source src="./assets/images/BG.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div
+    class="indexMenu-aside bg-light d-flex flex-column justify-content-between align-items-center w_indexMenu vh-100 pt-17 pt-sm-26 pb-8 pb-sm-13">
+
+    <ul class="text-center text-xl">
+      <li class="mb-24">
+        <a class="indexLogo" href="index.html">FAR</a>
+      </li>
+      <li class="mb-8">
+        <a href="about.html">ABOUT</a>
+      </li>
+      <li class="mb-8">
+        <a href="product.html">PRODUCT</a>
+      </li>
+      <li class="mb-8">
+        <a href="color.html">COLOR SELECTOR</a>
+      </li>
+      <li class="mb-8">
+        <a href="catalog.html">CATALOG</a>
+      </li>
+      <li class="mb-8">
+        <a href="site.html">SITE</a>
+      </li>
+      <li class="mb-8">
+        <a href="contact.html">CONTACT</a>
+      </li>
+    </ul>
+    <div class="justify-content-end pb-3">
+      <p class="text-sm pt-3">© 2021 FAR. All rights reserved</p>
+    </div>
+  </div>
+</section>
+
+  
+
+  
+
+  <script>
+    function on() {
+      document.getElementById("overlay").style.display = "block";
+    }
+    
+    function off() {
+      document.getElementById("overlay").style.display = "none";
+    }
+  </script>
+
+  <script src="./assets/js/vendors.js"></script>
+  <!-- ↑↑↑↑ 它是 jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+  
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>

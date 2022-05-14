@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="./assets/images/LOGO-ico.png">
+  <title>CATALOG</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  
+    <header class="shadow-bt">
+  <div class="container py-8">
+    <nav class="d-flex justify-content-between p-0">
+      <a class="logo" href="index.html">FAR</a>
+
+      <div class="d-flex align-self-center">
+        <div class="media-lg-only">
+          <ul class="d-flex">
+            <li class="d-flex align-self-center">
+              <a class="" href="about.html">ABOUT</a>
+            </li>
+            <li class="d-flex align-self-center">
+              <a class="ml-13" href="product.html">PRODUCT</a>
+            </li>
+            <li class="d-flex align-self-center">
+              <a class="ml-13" href="color.html">COLOR SELECTOR</a>
+            </li>
+            <li class="d-flex align-self-center">
+              <a class="ml-13" href="catalog.html">CATALOG</a>
+            </li>
+            <li class="d-flex align-self-center">
+              <a class="ml-13" href="site.html">SITE</a>
+            </li>
+            <li class="d-flex align-self-center">
+              <a class="ml-13" href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+
+        <a class="material-icons media-lg-none showMenu text-3xl font-weight-bold pl-7">menu</a>
+
+        <a class="position-relative pl-7 pl-lg-13" href="pay-1.html">
+          <span class="material-icons text-3xl">shopping_cart</span>
+          <span class="position-absolute cartText rounded-circle bg-primary text-white text-sm px-2 py-0">2</span>
+        </a>
+
+        <a class="material-icons text-3xl pl-7" href="login.html">account_circle</a>
+
+        <div class="position-relative">
+          <a href="#" class="material-icons language text-3xl pl-7">
+            language
+          </a>
+          <div class="position-absolute language_menu bg-white border rounded dropdown-menu-right">
+            <ul class="py-2">
+              <li class="px-8 py-2"><a href="#">ENGLISH</a></li>
+              <li class="px-8 py-2"><a href="#">繁體中文</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<ul class="showMenu-list">
+  <li class="d-flex align-self-center">
+    <a class="py-5 mt-5" href="about.html">ABOUT</a>
+  </li>
+  <li class="d-flex align-self-center">
+    <a class="py-5" href="product.html">PRODUCT</a>
+  </li>
+  <li class="d-flex align-self-center">
+    <a class="py-5" href="color.html">COLOR SELECTOR</a>
+  </li>
+  <li class="d-flex align-self-center">
+    <a class="py-5" href="catalog.html">CATALOG</a>
+  </li>
+  <li class="d-flex align-self-center">
+    <a class="py-5" href="site.html">SITE</a>
+  </li>
+  <li class="d-flex align-self-center">
+    <a class="py-5 mb-5" href="contact.html">CONTACT</a>
+  </li>
+</ul>
+  
+
+  
+<section class="container mt-20 mt-lg-24 mb-20 mb-lg-24">
+  <h2 class="border-bottom border-dark text-2xl text-lg-4xl font-weight-bold mb-10 mb-lg-17 pb-5 pb-lg-8">產品檢索</h2>
+
+  <div class="row px-6">
+    <div class="col-12 col-lg-3 p-0">
+      <form action=""
+        class="d-flex flex-column flex-sm-row justify-content-sm-between flex-sm-wrap flex-lg-column flex-lg-nowrap bg-gray rounded mb-8 p-6">
+        <select id="inputBrand" class="form-control w_productSelect mb-6 ">
+          <option selected>Brand</option>
+          <option>A</option>
+          <option>B</option>
+          <option>C</option>
+        </select>
+        <select id="inputCC" class="form-control w_productSelect mb-6">
+          <option selected>Cylinder capacity</option>
+          <option>149</option>
+          <option>250</option>
+        </select>
+        <select id="inputModel" class="form-control w_productSelect mb-6">
+          <option selected>Model</option>
+          <option>A</option>
+          <option>B</option>
+          <option>C</option>
+        </select>
+        <select id="inputYear" class="form-control w_productSelect mb-6">
+          <option selected>Year</option>
+          <option>2019</option>
+          <option>2020</option>
+          <option>2021</option>
+        </select>
+        <input type="text" class="form-control w_productSelect mb-6 mb-sm-0 mb-lg-6" id="inputReference"
+          placeholder="Reference No">
+        <button type="submit" class="btn btn-primary w_productSelect">SEARCH</button>
+      </form>
+    </div>
+
+    <div class="col-12 col-lg-9 table-responsive d-flex flex-column px-0 pl-lg-6">
+      <table class="table table-striped table-hover text-center">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Brand</th>
+            <th scope="col">Model</th>
+            <th scope="col">Year</th>
+            <th scope="col">CC</th>
+            <th scope="col">Position</th>
+            <th scope="col">Reference</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr data-toggle="modal" data-target="#catalogModal">
+            <th scope="row">ADLY</th>
+            <td>THUNDER BIKE</td>
+            <td>07/16</td>
+            <td>150</td>
+            <td>FRONT</td>
+            <td>1022</td>
+          </tr>
+          <tr>
+            <th scope="row">ADLY</th>
+            <td>THUNDER BIKE</td>
+            <td>07/16</td>
+            <td>150</td>
+            <td>FRONT</td>
+            <td>1022</td>
+          </tr>
+          <tr>
+            <th scope="row">ADLY</th>
+            <td>THUNDER BIKE</td>
+            <td>07/16</td>
+            <td>150</td>
+            <td>FRONT</td>
+            <td>1022</td>
+          </tr>
+          <tr>
+            <th scope="row">ADLY</th>
+            <td>THUNDER BIKE</td>
+            <td>07/16</td>
+            <td>150</td>
+            <td>FRONT</td>
+            <td>1022</td>
+          </tr>
+          <tr>
+            <th scope="row">ADLY</th>
+            <td>THUNDER BIKE</td>
+            <td>07/16</td>
+            <td>150</td>
+            <td>FRONT</td>
+            <td>1022</td>
+          </tr>
+          <tr>
+            <th scope="row">ADLY</th>
+            <td>THUNDER BIKE</td>
+            <td>07/16</td>
+            <td>150</td>
+            <td>FRONT</td>
+            <td>1022</td>
+          </tr>
+          <tr>
+            <th scope="row">ADLY</th>
+            <td>THUNDER BIKE</td>
+            <td>07/16</td>
+            <td>150</td>
+            <td>FRONT</td>
+            <td>1022</td>
+          </tr>
+          <tr>
+            <th scope="row">ADLY</th>
+            <td>THUNDER BIKE</td>
+            <td>07/16</td>
+            <td>150</td>
+            <td>FRONT</td>
+            <td>1022</td>
+          </tr>
+          <tr>
+            <th scope="row">ADLY</th>
+            <td>THUNDER BIKE</td>
+            <td>07/16</td>
+            <td>150</td>
+            <td>FRONT</td>
+            <td>1022</td>
+          </tr>
+          <tr>
+            <th scope="row">ADLY</th>
+            <td>THUNDER BIKE</td>
+            <td>07/16</td>
+            <td>150</td>
+            <td>FRONT</td>
+            <td>1022</td>
+          </tr>
+          <tr>
+            <th scope="row">ADLY</th>
+            <td>THUNDER BIKE</td>
+            <td>07/16</td>
+            <td>150</td>
+            <td>FRONT</td>
+            <td>1022</td>
+          </tr>
+          <tr>
+            <th scope="row">ADLY</th>
+            <td>THUNDER BIKE</td>
+            <td>07/16</td>
+            <td>150</td>
+            <td>FRONT</td>
+            <td>1022</td>
+          </tr>
+          <tr>
+            <th scope="row">ADLY</th>
+            <td>THUNDER BIKE</td>
+            <td>07/16</td>
+            <td>150</td>
+            <td>FRONT</td>
+            <td>1022</td>
+          </tr>
+          <tr>
+            <th scope="row">ADLY</th>
+            <td>THUNDER BIKE</td>
+            <td>07/16</td>
+            <td>150</td>
+            <td>FRONT</td>
+            <td>1022</td>
+          </tr>
+          <tr>
+            <th scope="row">ADLY</th>
+            <td>THUNDER BIKE</td>
+            <td>07/16</td>
+            <td>150</td>
+            <td>FRONT</td>
+            <td>1022</td>
+          </tr>
+          <tr>
+            <th scope="row">ADLY</th>
+            <td>THUNDER BIKE</td>
+            <td>07/16</td>
+            <td>150</td>
+            <td>FRONT</td>
+            <td>1022</td>
+          </tr>
+          <tr>
+            <th scope="row">ADLY</th>
+            <td>THUNDER BIKE</td>
+            <td>07/16</td>
+            <td>150</td>
+            <td>FRONT</td>
+            <td>1022</td>
+          </tr>
+          <tr>
+            <th scope="row">ADLY</th>
+            <td>THUNDER BIKE</td>
+            <td>07/16</td>
+            <td>150</td>
+            <td>FRONT</td>
+            <td>1022</td>
+          </tr>
+          <tr>
+            <th scope="row">ADLY</th>
+            <td>THUNDER BIKE</td>
+            <td>07/16</td>
+            <td>150</td>
+            <td>FRONT</td>
+            <td>1022</td>
+          </tr>
+          <tr>
+            <th scope="row">ADLY</th>
+            <td>THUNDER BIKE</td>
+            <td>07/16</td>
+            <td>150</td>
+            <td>FRONT</td>
+            <td>1022</td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <nav aria-label="Page navigation example" class="align-self-end">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</section>
+
+
+<!-- catalogModal -->
+<div class="modal fade p-0" id="catalogModal" data-backdrop="static" data-keyboard="false" tabindex="-1"
+  aria-labelledby="catalogModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content position-relative">
+      <button type="button" class="close position-absolute material-icons text-3xl" data-dismiss="modal"
+        aria-label="Close">
+        <span aria-hidden="true">highlight_off</span>
+      </button>
+
+      <div class="modal-body py-6 px-0 py-md-13 px-md-6 py-lg-20">
+        <div class="container-fluid">
+          <div class="row flex-column flex-lg-row justify-content-lg-start align-items-center">
+            <div class="col-12 col-lg-5">
+              <div class="d-flex flex-column justify-content-center align-items-center">
+                <img src="./assets/images/product-2.png" alt="product" class="w_220 mb-13">
+                <h5 class="text-primary font-weight-bold mb-13">SA-CYGNUS-245</h5>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-6 d-flex flex-column">
+              <table class="table table-striped mb-13">
+                <thead class="thead-dark rounded">
+                  <tr class="text-center">
+                    <th colspan="2">Model</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td class="font-weight-bold">Brand</th>
+                    <td class="text-right">ADLY</td>
+                  </tr>
+                  <tr>
+                    <td class="font-weight-bold">Year</th>
+                    <td class="text-right">07/16</td>
+                  </tr>
+                  <tr>
+                    <td class="font-weight-bold">Cylinder capacity (cc)</th>
+                    <td class="text-right">150</td>
+                  </tr>
+                  <tr>
+                    <td class="font-weight-bold">Position</th>
+                    <td class="text-right">FRONT</td>
+                  </tr>
+                  <tr>
+                    <td class="font-weight-bold">Reference</th>
+                    <td class="text-right">1022</td>
+                  </tr>
+                  <tr>
+                    <td class="font-weight-bold">Outside diameter (mm)</th>
+                    <td class="text-right">190</td>
+                  </tr>
+                  <tr>
+                    <td class="font-weight-bold">Inside diameter (mm)</th>
+                    <td class="text-right">58</td>
+                  </tr>
+                  <tr>
+                    <td class="font-weight-bold">Side</th>
+                    <td class="text-right">L</td>
+                  </tr>
+                  <tr>
+                    <td class="font-weight-bold">Thickness (mm)</th>
+                    <td class="text-right">3,7</td>
+                  </tr>
+                  <tr>
+                    <td class="font-weight-bold">Hole number</th>
+                    <td class="text-right">3</td>
+                  </tr>
+                  <tr>
+                    <td class="font-weight-bold">Hole diameter (mm)</th>
+                    <td class="text-right">MH</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      <p class="text-lg font-weight-bold mt-6 mb-3">浮動釦</p>
+                      <ul class="px-1">
+                        <li class="form-check form-check-inline mb-6">
+                          <input class="form-check-input" type="radio" name="colorSelectAOptions" id="colorSelectA1"
+                            value="optionA1">
+                          <label class="form-check-label mr-2" for="colorSelectA1">白鐵</label>
+                        </li>
+                        <li class="form-check form-check-inline mb-6">
+                          <input class="form-check-input" type="radio" name="colorSelectAOptions" id="colorSelectA2"
+                            value="optionA2">
+                          <label class="form-check-label mr-2" for="colorSelectA2">灰</label>
+                        </li>
+                        <li class="form-check form-check-inline mb-6">
+                          <input class="form-check-input" type="radio" name="colorSelectAOptions" id="colorSelectA3"
+                            value="optionA3">
+                          <label class="form-check-label mr-2" for="colorSelectA3">黑</label>
+                        </li>
+                        <li class="form-check form-check-inline mb-6">
+                          <input class="form-check-input" type="radio" name="colorSelectAOptions" id="colorSelectA4"
+                            value="optionA4">
+                          <label class="form-check-label mr-2" for="colorSelectA4">金</label>
+                        </li>
+                        <li class="form-check form-check-inline mb-6">
+                          <input class="form-check-input" type="radio" name="colorSelectAOptions" id="colorSelectA5"
+                            value="optionA5">
+                          <label class="form-check-label mr-2" for="colorSelectA5">銀</label>
+                        </li>
+                        <li class="form-check form-check-inline mb-6">
+                          <input class="form-check-input" type="radio" name="colorSelectAOptions" id="colorSelectA6"
+                            value="optionA6">
+                          <label class="form-check-label mr-2" for="colorSelectA6">紅</label>
+                        </li>
+                        <li class="form-check form-check-inline mb-6">
+                          <input class="form-check-input" type="radio" name="colorSelectAOptions" id="colorSelectA7"
+                            value="optionA7">
+                          <label class="form-check-label mr-2" for="colorSelectA7">橘</label>
+                        </li>
+                        <li class="form-check form-check-inline mb-6">
+                          <input class="form-check-input" type="radio" name="colorSelectAOptions" id="colorSelectA8"
+                            value="optionA8">
+                          <label class="form-check-label mr-2" for="colorSelectA8">綠</label>
+                        </li>
+                        <li class="form-check form-check-inline mb-6">
+                          <input class="form-check-input" type="radio" name="colorSelectAOptions" id="colorSelectA9"
+                            value="optionA9">
+                          <label class="form-check-label mr-2" for="colorSelectA9">藍</label>
+                        </li>
+                        <li class="form-check form-check-inline mb-6">
+                          <input class="form-check-input" type="radio" name="colorSelectAOptions" id="colorSelectA10"
+                            value="optionA10">
+                          <label class="form-check-label mr-2" for="colorSelectA10">紫</label>
+                        </li>
+                        <li class="form-check form-check-inline mb-6">
+                          <input class="form-check-input" type="radio" name="colorSelectAOptions" id="colorSelectA11"
+                            value="optionA11">
+                          <label class="form-check-label mr-2" for="colorSelectA11">彩鈦</label>
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      <p class="min-width_100 text-lg font-weight-bold mt-6 mb-3">內盤</p>
+                      <ul class="px-1">
+                        <li class="form-check form-check-inline mb-6">
+                          <input class="form-check-input" type="radio" name="colorSelectBOptions" id="colorSelectB1"
+                            value="optionB1">
+                          <label class="form-check-label mr-2" for="colorSelectB1">質感灰</label>
+                        </li>
+                        <li class="form-check form-check-inline mb-6">
+                          <input class="form-check-input" type="radio" name="colorSelectBOptions" id="colorSelectB2"
+                            value="optionB2">
+                          <label class="form-check-label mr-2" for="colorSelectB2">神秘黑</label>
+                        </li>
+                        <li class="form-check form-check-inline mb-6">
+                          <input class="form-check-input" type="radio" name="colorSelectBOptions" id="colorSelectB3"
+                            value="optionB3">
+                          <label class="form-check-label mr-2" for="colorSelectB3">黑卡夢</label>
+                        </li>
+                        <li class="form-check form-check-inline mb-6">
+                          <input class="form-check-input" type="radio" name="colorSelectBOptions" id="colorSelectB4"
+                            value="optionB4">
+                          <label class="form-check-label mr-2" for="colorSelectB4">奢華金</label>
+                        </li>
+                        <li class="form-check form-check-inline mb-6">
+                          <input class="form-check-input" type="radio" name="colorSelectBOptions" id="colorSelectB5"
+                            value="optionB5">
+                          <label class="form-check-label mr-2" for="colorSelectB5">極光銀</label>
+                        </li>
+                        <li class="form-check form-check-inline mb-6">
+                          <input class="form-check-input" type="radio" name="colorSelectBOptions" id="colorSelectB6"
+                            value="optionB6">
+                          <label class="form-check-label mr-2" for="colorSelectB6">魅力紅</label>
+                        </li>
+                        <li class="form-check form-check-inline mb-6">
+                          <input class="form-check-input" type="radio" name="colorSelectBOptions" id="colorSelectB7"
+                            value="optionB7">
+                          <label class="form-check-label mr-2" for="colorSelectB7">亮橙橘</label>
+                        </li>
+                        <li class="form-check form-check-inline mb-6">
+                          <input class="form-check-input" type="radio" name="colorSelectBOptions" id="colorSelectB8"
+                            value="optionB8">
+                          <label class="form-check-label mr-2" for="colorSelectB8">躍動綠</label>
+                        </li>
+                        <li class="form-check form-check-inline mb-6">
+                          <input class="form-check-input" type="radio" name="colorSelectBOptions" id="colorSelectB9"
+                            value="optionB9">
+                          <label class="form-check-label mr-2" for="colorSelectB9">海軍藍</label>
+                        </li>
+                        <li class="form-check form-check-inline mb-6">
+                          <input class="form-check-input" type="radio" name="colorSelectBOptions" id="colorSelectB10"
+                            value="optionB10">
+                          <label class="form-check-label mr-2" for="colorSelectB10">魅惑紫</label>
+                        </li>
+                        <li class="form-check form-check-inline mb-6">
+                          <input class="form-check-input" type="radio" name="colorSelectBOptions" id="colorSelectB11"
+                            value="optionB11">
+                          <label class="form-check-label mr-2" for="colorSelectB11">粉桃紅</label>
+                        </li>
+                        <li class="form-check form-check-inline mb-6">
+                          <input class="form-check-input" type="radio" name="colorSelectBOptions" id="colorSelectB12"
+                            value="optionB12">
+                          <label class="form-check-label mr-2" for="colorSelectB12">青花瓷</label>
+                        </li>
+                        <li class="form-check form-check-inline mb-6">
+                          <input class="form-check-input" type="radio" name="colorSelectBOptions" id="colorSelectB13"
+                            value="optionB13">
+                          <label class="form-check-label mr-2" for="colorSelectB13">綠迷彩</label>
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <button id="putinCart" class="align-self-end btn btn-primary w-50">
+                加入購物車
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <section class="sendmailBg bg-black d-flex align-items-end">
+	<div class="container mb-24">
+		<div class="row">
+			<div class="col-12 col-md-6 col-lg-4">
+				<label for="sendmail" class="text-2xl text-lg-3xl font-weight-medium text-white lineHeight-2 mb-5">
+					對產品有任何疑問？<br>請與我們聯繫！
+				</label>
+		
+				<div class="input-group" data-aos="fade-up" data-aos-duration="2000">
+					<input id="sendmail" type="text" class="form-control py-5" placeholder="輸入您的電子信箱"
+						aria-label="Recipient's username" aria-describedby="button-addon2">
+					<div class="input-group-append">
+						<button class="btn btn-primary px-14 px-md-17" type="button" id="button-addon2">送出</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+  
+
+  
+    <footer class="container d-flex justify-content-between align-items-center py-8">
+  <a class="logo" href="index.html">FAR</a>
+  <p class="mobile-only text-sm mt-7">© 2021 F.A.R.</p>
+  <p class="media-sm-show text-sm mt-7">Copyright © 2021 F.A.R.. All rights reserved.</p>
+</footer>
+  
+
+  <script>
+    function on() {
+      document.getElementById("overlay").style.display = "block";
+    }
+    
+    function off() {
+      document.getElementById("overlay").style.display = "none";
+    }
+  </script>
+
+  <script src="./assets/js/vendors.js"></script>
+  <!-- ↑↑↑↑ 它是 jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+  
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>

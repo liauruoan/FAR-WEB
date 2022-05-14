@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="./assets/images/LOGO-ico.png">
+  <title>CONTACT</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  
+    <header class="shadow-bt">
+  <div class="container py-8">
+    <nav class="d-flex justify-content-between p-0">
+      <a class="logo" href="index.html">FAR</a>
+
+      <div class="d-flex align-self-center">
+        <div class="media-lg-only">
+          <ul class="d-flex">
+            <li class="d-flex align-self-center">
+              <a class="" href="about.html">ABOUT</a>
+            </li>
+            <li class="d-flex align-self-center">
+              <a class="ml-13" href="product.html">PRODUCT</a>
+            </li>
+            <li class="d-flex align-self-center">
+              <a class="ml-13" href="color.html">COLOR SELECTOR</a>
+            </li>
+            <li class="d-flex align-self-center">
+              <a class="ml-13" href="catalog.html">CATALOG</a>
+            </li>
+            <li class="d-flex align-self-center">
+              <a class="ml-13" href="site.html">SITE</a>
+            </li>
+            <li class="d-flex align-self-center">
+              <a class="ml-13" href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+
+        <a class="material-icons media-lg-none showMenu text-3xl font-weight-bold pl-7">menu</a>
+
+        <a class="position-relative pl-7 pl-lg-13" href="pay-1.html">
+          <span class="material-icons text-3xl">shopping_cart</span>
+          <span class="position-absolute cartText rounded-circle bg-primary text-white text-sm px-2 py-0">2</span>
+        </a>
+
+        <a class="material-icons text-3xl pl-7" href="login.html">account_circle</a>
+
+        <div class="position-relative">
+          <a href="#" class="material-icons language text-3xl pl-7">
+            language
+          </a>
+          <div class="position-absolute language_menu bg-white border rounded dropdown-menu-right">
+            <ul class="py-2">
+              <li class="px-8 py-2"><a href="#">ENGLISH</a></li>
+              <li class="px-8 py-2"><a href="#">繁體中文</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<ul class="showMenu-list">
+  <li class="d-flex align-self-center">
+    <a class="py-5 mt-5" href="about.html">ABOUT</a>
+  </li>
+  <li class="d-flex align-self-center">
+    <a class="py-5" href="product.html">PRODUCT</a>
+  </li>
+  <li class="d-flex align-self-center">
+    <a class="py-5" href="color.html">COLOR SELECTOR</a>
+  </li>
+  <li class="d-flex align-self-center">
+    <a class="py-5" href="catalog.html">CATALOG</a>
+  </li>
+  <li class="d-flex align-self-center">
+    <a class="py-5" href="site.html">SITE</a>
+  </li>
+  <li class="d-flex align-self-center">
+    <a class="py-5 mb-5" href="contact.html">CONTACT</a>
+  </li>
+</ul>
+  
+
+  
+<section class="container mt-20 mt-lg-24 mb-20 mb-lg-24">
+  <h2 class="border-bottom border-dark text-2xl text-lg-4xl font-weight-bold mb-10 mb-lg-20 pb-5 pb-lg-8">聯絡我們</h2>
+
+  <div class="shadow rounded w_contact mx-auto p-8 p-md-17">
+    <p class="text-xl mb-8 mb-lg-17">若您有任何意見或疑問，我們誠摯地邀請您直接寄到我們專人服務的電子郵件信箱，謝謝！</p>
+
+    <form action="" class="d-flex flex-column">
+      <div class="d-flex flex-column flex-md-row justify-content-md-between mb-8 mb-md-17">
+        <div class="">
+          <label for="contactName" class="d-block mb-1">姓名</label>
+          <input type="text" id="contactName" placeholder="請輸入姓名" class="d-block w-100 pt-1 pl-3 mb-5" required>
+          <label for="phone" class="d-block mb-1">電話</label>
+          <input type="text" id="phone" placeholder="請輸入電話" class="d-block w-100 pt-1 pl-3 mb-5" required>
+          <label for="phone" class="d-block mb-1">Email</label>
+          <input type="text" id="phone" placeholder="請輸入Email" class="d-block w-100 pt-1 pl-3 mb-5" required>
+        </div>
+        <div class="w_questionInput">
+          <label for="question" class="d-block mb-1">請敘述您的問題</label>
+          <textarea class="d-block w-100 py-1 pl-3" id="question" rows="7" placeholder="請詳細描述您的問題，以利客服人員回覆"></textarea>
+        </div>
+      </div>
+
+      <button type="submit" class="align-self-end btn btn-primary py-4 px-15">確認送出</button>
+    </form>
+  </div>
+
+</section>
+
+  
+
+  
+
+  <script>
+    function on() {
+      document.getElementById("overlay").style.display = "block";
+    }
+    
+    function off() {
+      document.getElementById("overlay").style.display = "none";
+    }
+  </script>
+
+  <script src="./assets/js/vendors.js"></script>
+  <!-- ↑↑↑↑ 它是 jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+  
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
